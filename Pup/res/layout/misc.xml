@@ -1,0 +1,512 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/profile" >
+    
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+          android:duplicateParentState="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+      android:background="@drawable/x1"
+        android:fadingEdge="horizontal"
+        android:onClick="selfDestruct" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+          android:duplicateParentState="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button3"
+          android:background="@drawable/x2"
+           android:onClick="selfDestruct"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+          android:duplicateParentState="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/button5"
+        android:layout_toLeftOf="@+id/button2"
+        android:background="@drawable/d" 
+             android:clickable="false"
+         android:onClick="selfDestruct"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+          android:duplicateParentState="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+        android:background="@drawable/x3"
+         android:onClick="selfDestruct" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+          android:duplicateParentState="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/button4"
+        android:layout_toLeftOf="@+id/button3"
+        
+ android:background="@drawable/x6" 
+  android:onClick="selfDestruct"/>
+    
+
+    
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1"
+        >
+         <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="The Polytechnic University of the Philippines (PUP)"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+         <ImageView
+             android:id="@+id/imageView2"
+             android:layout_width="wrap_content"
+             android:layout_height="166dp"
+             android:src="@drawable/pup1" />
+
+         <TableRow
+             android:id="@+id/tableRow1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" >
+         </TableRow>
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="The Polytechnic University of the Philippines (PUP) is a government educational institution governed by Republic Act Number 8292 known as the Higher Education Modernization Act of 1997, and its Implementing Rules and Regulations contained in the Commission on Higher Education Memorandum Circular No. 4, series 1997. PUP is one of the country's highly competent educational institutions. The PUP Community is composed of the Board of Regents, University Officials, Administrative and Academic Personnel, Students, various Organizations, and the Alumni.
+
+Governance of PUP is vested upon the Board of Regents, which exercises policy-making functions to carry out the mission and programs of the University by virtue of RA 8292 granted by the Commission on Higher Education. The University is administered by an appointed President by virtue of RA 8292 and is assisted by an Executive Vice President and the Vice Presidents for Academic Affairs, Student Services, Administration, Research, Extension and Development, and Finance."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="216dp"
+            android:src="@drawable/txt1" />
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="This institution started as the Manila Business School (MBS), founded in October 19, 1904 as part of the city school system under the superintendence of C.A. O’Reilley, which responds to the demand for training personnel for government service and the felt need to provide skills essential for private employment. In 1908, it was renamed as Philippine School of Commerce (PSC) and merged with the Philippine Normal School (PNS) in 1933 to 1946. By virtue of Republic Act 778, the PSC was again changed to Philippine College of Commerce (PCC) in 1952. Subsequently, the Philippine College of Commerce (PCC) was converted into a chartered state university, now known as the Polytechnic University of the Philippines by virtue of Presidential Decree Number 1341 issued by the President of the Philippines on April 1, 1978.
+
+PUP is a public, non-sectarian, non-profit institution of higher learning primarily tasked with harnessing the tremendous human resources potential of the nation by improving the physical, intellectual and material well-being of the individual through higher occupational, technical and professional instruction and training in the applied arts and sciences related to the fields of commerce, business administration, and technology."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+           <ImageView
+               android:id="@+id/imageView2"
+               android:layout_width="wrap_content"
+               android:layout_height="222dp"
+               android:src="@drawable/txt4" />
+        
+            <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="The University promotes applied research, advanced studies and progressive leadership in the stated fields. We also offer ladder-type higher vocational, distance learning (open university system), technical and professional programs in the area of business and distributive arts, education and the social sciences related to the fields of commerce, business administration and other polytechnic areas. Furthermore, the University takes steps to enrich the academic program in other fields of study and adopts a polytechnic program of education designed to provide the individual with employable skills and managerial know-how in order to make them creative, productive and self-reliant.
+
+PUP operates year-round with two semesters and a summer. Summer sessions depend on the course and on the campus.  The University employs 1,483 full-time and part-time faculty members with a few of the full-time faculty holding administrative positions. There are 707 regular and casual administrative employees who provide support services to the University population. The faculty spends two-thirds of their time in teaching and one-third in research and extension activities."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="227dp"
+                    android:src="@drawable/txt6" />
+              
+                <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="One of the major functions of the University is research, a key component of scholarship and teaching. During the years under review, PUP received and allotted government and private funding to research.
+
+With more than twenty campuses serving more than 68,000 students, the Polytechnic University of the Philippines is the largest university in terms of student population. The main campus is named after a national hero, Apolinario Mabini and is located in Sta. Mesa, Manila - in the middle of a busy metropolitan. But despite of this, the environment within its perimeter is a place conducive of learning."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+              
+                        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Majority of the students belong to the economically challenged level of society. It is the University's commitment to give qualified and talented students access to quality and responsive education to aid them in the achievement of their dreams and improve their lives. Being a well-educated and skilled individual, they will not only become job seekers but job creators as well, a force of knowledge workers and entrepreneurs.
+
+Scholars of the Nation (Iskolar ng Bayan), that is what we call our students because the Philippine Government and other non-government institutions subsidize their tuition and other fees. More than a hundred of the student population are foreigners from China, Singapore, Indonesia, Cambodia, Myanmar, Tanzania, Nigeria, and Ghana. They are enrolled in business, language, statistics, communication, and education courses in the undergraduate and graduate levels. Students from Korea regularly visit PUP in summer to take up Intensive English courses."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+                        
+                                <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+                                
+                                        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="The Polytechnic University of the Philippines takes pride in its capability to accommodate the student needs because it:
+
+Has more than 20 campuses to make education accessible to everyone;
+Offers a wide range of courses: doctorate, master’s, and bachelor’s degrees as well as technology courses available through traditional and open, flexible or distance learning;
+Pioneered the ladderized system and the accreditation and equivalency system through the Expanded Tertiary Education Equivalency and Accreditation Program (ETEEAP) and the Nontraditional System Program (NTSP);
+Maintains an average size of 45-50 students per class;
+Offers an extensive selection of educational choices through more than 60 undergraduate and graduate programs;
+Schedules weekend and evening classes;
+Brings the resources and programs of PUP not only to full-time students but also to part-time and adult learners; and
+Provides a long list of extension services for the community and the country."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+
+                                                               <ImageView
+                                                                   android:id="@+id/imageView2"
+                                                                   android:layout_width="fill_parent"
+                                                                   android:layout_height="160dp"
+                                                                   android:src="@drawable/txt3" />
+                                                             
+                                                                                  <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="The commitment of its leaders, faculty, staff, students, alumni and friends has formed the cornerstone of this University that has exceeded expectations with every generation of the graduates it has produced since its establishment.
+
+Today, PUP is relishing its successes and its students are enjoying unprecedented academic opportunities, an enhanced campus environment, upgraded colleges, state-of-the-art technology, and nationally and internationally recognized programs.
+
+PUP celebrated its centenary last October 2004. It has gone far from what it was more than a century ago. This is mainly due to the support given by the government and the PUP Community and its benefactors. With the combined effort, PUP will continue to be a partner in nation-building and in poverty alleviation for the marginalized sector of society with quality, responsive, and relevant education as a tool."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+                                                     <TextView
+                                                                                      android:id="@+id/textView3"
+                                                                                      android:layout_width="wrap_content"
+                                                                                      android:layout_height="wrap_content"
+                                                                                      android:text="" />
+                                                                                <TextView
+                                                                                      android:id="@+id/textView3"
+                                                                                      android:layout_width="wrap_content"
+                                                                                      android:layout_height="wrap_content"
+                                                                                      android:text="http://www.pup.edu.ph/Profile/" />
+       
+            </TableLayout>
+</ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    
+                    <ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="University Calendar for Academic Year 2012-2013"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="152dp"
+            android:src="@drawable/pup1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+            android:text="First Semester 2012"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+
+
+
+        
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:gravity="center_vertical"
+            android:text="April
+16-May 8 \n	First Year Registration \n  \n
+June	  \n \n 1-2	Second Year Registration \n
+3-4	Third Year Registration \n
+5-6	Fourth Year Registration \n
+7-8	Fifth Year Registration\n
+15	College Faculty Meeting\n
+18	First Semester Classes Start\n
+19-30	 Adjustment Period\n
+30	 Last day of payment of tuition and fees without fine\n 
+Deadline for submission of adjustment form/s or application for change of enrollment (ACE) forms to OUR \n  \n
+July  \n \n 2-27	 Issuance of application for graduation, Mid-year 2012-2013 \n
+27 	 Deadline for submission of application for Mid-year graduation 2012-2013 \n  \n
+August	  \n\n 13-18	Mid-term Examinations \n
+19	 Mid-term Departmental Examinations \n
+25	 Encoding of Mid-term grades 
+
+Deadline of Completion of Incomplete Marks, First Semester 2011-2012
+27	National Heroes Day \n
+31	Last day for graduating students to clear their deficiencies \n  \n
+September   \n\n	3	 PUPCET 2013 application starts \n  \n
+October	  \n\n 1 and 2	PUP 108th Foundation Anniversary \n
+11-17	Final Examinations, Graduating and Non-Graduating Students \n
+14	 Final Departmental Examinations \n 
+19	 Integration Period/Round-up activities \n
+
+Submission of pink card grades from Dean's Office to OUR
+
+Submission of First Semester 2012-2013 gradesheets to the Dean
+
+Distribution of classcards
+
+Submission of subject offerings for Second Semester, 2012-2013 \n
+20	First Semester Ends
+
+Encoding of Final Grades \n
+27	 Submission of First Semester 2012-2013 gradesheets to OUR   \n  \n
+November  \n  \n
+November	9	 University Academic Council Meeting  \n
+December	7	Mid-Year Commencement Exercises  \n  \n
+Second Semester 2012  \n  \n
+October  \n 22-23	First Year Registration  \n
+24-25	Second Year Registration  \n
+26-27	Third Year Registration  \n
+29-30	Fourth Year Registration  \n
+31	Fifth Year Registration 
+
+College Faculty Meeting  \n  \n
+November \n  \n 1	All Saints' Day \n
+5	Second Semester Classes Start  \n
+5	 Resumption of PUPCET 2013 Applications  \n
+6-19	 Adjustment Period  \n
+9	 University Academic Council Meeting  \n
+19	 Last day of payment of tuition and fees without fine 
+
+Deadline for submission of adjustment form/s or application for change of enrollment (ACE) forms to OUR
+19-Dec 7	 Issuance of application for Year-End Graduation, 2012-2013  \n
+30	 Bonifacio Day  \n \n
+December	 \n  \n 3	 LAST DAY OF PAYMENT WITH FINE
+
+SIS CLOSED FOR REGISTRATION  \n
+7	Mid-Year Commencement Exercises 
+
+Deadline for submission of application for Year-End Graduation \n  \n 2012-2013   \n  \n
+17-Jan 2	Christmas Vacation  \n
+30	Rizal Day  \n  \n
+2nd Semester 2013  \n 
+January  \n  \n	1	New Year's Day  \n
+3	Classes Resume  \n 
+20	 Mid-term Departmental Examinations \n
+21-26	Mid-term Examinations  \n
+27	 PUPCET 2013 First Batch  \n  \n
+February  \n  \n	1	 Last day for graduating students to clear their deficiencies  \n
+2	 Encoding of Mid-term grades
+
+Deadline of Completion of Incomplete Marks Second Semester 2010-2011 \n
+10	PUPLHS 2013 Entrance Exam  \n
+17	PUPCET 2013 Second Batch  \n  \n
+March	 \n  \n 18-23	Final Examinations - Graduating and Non-Graduating Students  \n
+26-27	 Integration Period/Round-up activities
+
+Submission of pink card grades from the Deans to OUR
+
+Submission of Summer 2013 subject offerings to OUR
+
+Distribution of classcards  \n
+27	Second Semester Ends 
+
+Encoding of Final Grades  \n
+28	Long Vacation begins  \n  \n
+April  \n  \n	2	 Submission of Second Semester 2012-2013 gradesheets to the Dean  \n
+6	 Submission of Second Semester 2012-2013 gradesheets to OUR  \n
+12	 University Academic Council Meeting  \n
+May	10	Year-End Commencement Exercises 2012-2013 
+Summer 2013  \n  \n
+April	 \n  \n1-5	 Registration Period  \n
+2	 Submission of subject offerings, First Semester 2013-2014 to OUR  \n
+9	 Araw ng Kagitingan  \n
+10	Summer Classes Start  \n
+26-27	Mid-term Examinations 
+
+Encoding of Mid-term grades
+
+DEADLINE OF COMPLETION OF INCOMPLETE MARKS SUMMER 2010-2011  \n  \n
+May \n  \n	1	Labor day  \n
+17-18	Final Examinations 
+
+Encoding of Final Grades  \n
+18	Round-up of activities 
+
+End of Summer Term  \n  \n
+June	 \n 6	 Long Vacation Ends"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="http://www.pup.edu.ph/Profile/Calendar.aspx" />
+        
+            </TableLayout>
+</ScrollView>
+        
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1"
+        >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/txt1" />
+        
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/txt2" />
+        
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/txt3" />
+        
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/txt4" />
+        
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="234dp"
+            android:src="@drawable/txt5" />
+          
+        
+
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/txt6" />
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/txt7" />
+        
+
+   </TableLayout>
+</ScrollView>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

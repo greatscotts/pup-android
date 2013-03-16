@@ -1,0 +1,55 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableLayout
+       
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/orangelog" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ORANGE APPS is a young, fresh and dynamic start-up company founded by Gian Scottie Javelona, a 19 year-old college student from Polytechnic University of the Philippines along with his co-founder, 18 year-old Paulo Benologa. " />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We started creating software application programs as a game to challenge ourselves if we could develop efficient and effective solutions and find ways to do things at a speed we never thought possible. Our brainchild, THE PUP MOBILE PORTAL is a gateway for online content application for Android mobile devices that caters to the students, faculty, alumni and guest of Polytechnic University of the Philippines." />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a tour of our website and If you have any comments or questions, please feel free to contact us. Visit us again for new and exciting updates on our website." />
+    </TableLayout>
+
+</ScrollView>
